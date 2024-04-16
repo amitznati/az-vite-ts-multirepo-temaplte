@@ -8,6 +8,7 @@
   "types": "dist/digital-sdk.d.ts",
   "scripts": {
     "build": "tsc && vite build",
+    "watch": "tsc && vite build --watch",
     "prettier": "prettier --write ."
   },
   "dependencies": {

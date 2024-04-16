@@ -7,7 +7,7 @@ const {connectedWidget: SelectAccount} = SelectedAccountWidget;
 const { store, persistor } = getStoreInstance();
 
 function App() {
-console.log({store, persistor})
+
   return (
     <Provider store={store}>
       <PersistGate persistor={persistor}>
