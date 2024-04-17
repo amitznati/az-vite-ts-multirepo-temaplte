@@ -90,5 +90,5 @@ export const getInstance = (): ApisType => {
   if (!instance) {
     instance = createInstance();
   }
-  return instance;
+  return instance as ApisType;
 };

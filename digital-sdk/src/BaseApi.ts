@@ -1,30 +1,4 @@
-import { ApisType } from './types';
-
-type serviceRequestOptionsType = {
-  ignoreSpinner?: boolean;
-  feedbackOptions?: {
-    successCode?: string;
-    successValues?: any;
-    errorCode?: string;
-    errorValues?: any;
-  };
-};
-
-interface IBaseApi {
-  store: any;
-  APIsInstances: ApisType;
-  dispatchStoreAction: (type: string, payload: any) => void;
-  startSpinner: (spinnerId: string, options: any) => void;
-  stopSpinner: (spinnerId: string, options: any) => void;
-  serviceRequest: (
-    serviceMethod: any,
-    payload: any,
-    actionType?: string,
-    getSuccessPayload?: (res: any) => any,
-    getErrorPayload?: (err: any) => any,
-    options?: serviceRequestOptionsType
-  ) => Promise<any>;
-}
+import {ApisType, IBaseApi, serviceRequestOptionsType} from './types';
 
 export default class BaseApi implements IBaseApi {
   store: any;
