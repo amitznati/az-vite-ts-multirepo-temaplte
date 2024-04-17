@@ -13,3 +13,12 @@ export const widget = {
 };
 
 export default widget;
+
+declare global {
+  interface Window { amdocs: {[key: string]: any; }}
+}
+
+window.amdocs = {
+  ...window.amdocs,
+  ["digital-select-account"]: widget
+};

@@ -1,6 +1,7 @@
 import {BaseApi} from 'digital-sdk';
 import selectors from "./SelectAccountSelectors";
 
+
 export const ActionTypes = {
   SelectAccount_UPDATE_DATA: "SelectAccount_UPDATE_DATA",
 };

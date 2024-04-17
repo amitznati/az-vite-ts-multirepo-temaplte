@@ -5,3 +5,14 @@ export {
   hooks,
   ControlComponents
 }
+declare global {
+  interface Window { amdocs: {[key: string]: any; }}
+}
+
+window.amdocs = {
+  ...window.amdocs,
+  ["digital-common-components"]: {
+    hooks,
+    ControlComponents
+  }
+};

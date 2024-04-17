@@ -1,5 +1,5 @@
-import {widget as SelectedAccountWidget} from 'digital-select-account';
-import {getStoreInstance} from 'digital-sdk'
+import SelectedAccountWidget from 'digital-select-account';
+import {getStoreInstance} from 'digital-sdk';
 import { Provider } from 'react-redux';
 import { PersistGate } from "redux-persist/integration/react";
 
