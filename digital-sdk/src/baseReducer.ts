@@ -45,7 +45,7 @@ const reducer = (state = initialState, action: any) => {
 };
 export const config = {
   sliceName: "general",
-  apiName: "",
+  apiName: "BaseApi",
   persist: {
     whitelist: ["persistData"],
   },

@@ -3,7 +3,7 @@ import {getStoreInstance} from 'digital-sdk';
 import { Provider } from 'react-redux';
 import { PersistGate } from "redux-persist/integration/react";
 import {createBrowserRouter, RouterProvider, Link} from "react-router-dom";
-
+import MainLoader from "./MainLoader";
 
 const { store, persistor } = getStoreInstance();
 
@@ -26,6 +26,7 @@ function App() {
     <Provider store={store}>
       <PersistGate persistor={persistor}>
         <RouterProvider router={router} />
+        <MainLoader />
       </PersistGate>
     </Provider>
   )
