@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'TeleNeo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('TeleNeo'), url('https://fonts.cdnfonts.com/s/66597/Tele Neo.woff') format('woff');
+}
+@font-face {
+  font-family: 'TeleNeo';
+  font-style: normal;
+  font-weight: 250;
+  src: local('TeleNeo'), url('https://fonts.cdnfonts.com/s/66597/Tele Neo Thin.woff') format('woff');
+}
+@font-face {
+  font-family: 'TeleNeo';
+  font-style: normal;
+  font-weight: 500;
+  src: local('TeleNeo'), url('https://fonts.cdnfonts.com/s/66597/Tele Neo Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'TeleNeo';
+  font-style: normal;
+  font-weight: 700;
+  src: local('TeleNeo'), url('https://fonts.cdnfonts.com/s/66597/Tele Neo Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'TeleNeo';
+  font-style: normal;
+  font-weight: 800;
+  src: local('TeleNeo'), url('https://fonts.cdnfonts.com/s/66597/Tele Neo Extrabold.woff') format('woff');
+}
+
+*{
+  font-family: "-apple-system, BlinkMacSystemFont", sans-serif;
+  font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.text {
+  &-neo {
+    font-family: 'TeleNeo', sans-serif;
+  }
+  &-normal {
+    font-weight: 400;
+  }
+
+  &-bold {
+    font-weight: 800;
+  }
+
+  &-large {
+    font-size: 20px;
+  }
+
+  &-small {
+    font-size: 14px;
+  }
+
+  &-xl {
+    font-size: 24px;
+  }
+  &-xxl {
+    font-size: 34px;
+  }
+
+}

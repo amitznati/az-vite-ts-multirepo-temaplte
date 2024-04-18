@@ -9,3 +9,7 @@ export type LoadingProps = TLoadingProps;
 import { CardProps as ICardProps } from "./Card";
 export { default as Card } from "./Card";
 export type CardProps = ICardProps;
+
+export {default as MUIThemeProvider} from './MUIThemeProvider';
+export {default as PageContainer} from './PageContainer/PageContainer.tsx';
+export {Title} from './Typography';

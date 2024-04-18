@@ -1,32 +1,22 @@
-import SelectAccount from 'digital-select-account';
 import {getStoreInstance} from 'digital-sdk';
 import { Provider } from 'react-redux';
 import { PersistGate } from "redux-persist/integration/react";
-import {createBrowserRouter, RouterProvider, Link} from "react-router-dom";
 import MainLoader from "./MainLoader";
+import Router from "./Router.tsx";
+// import 'digital-style/dist/styles.css';
 
 const { store, persistor } = getStoreInstance();
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: (
-      <div>
-        <h1>Hello World</h1>
-        <Link to="select-account">Select Account</Link>
-      </div>
-    ),
-  },
-  {path: "select-account", element: <SelectAccount />},
-]);
 
 function App() {
 
   return (
     <Provider store={store}>
       <PersistGate persistor={persistor}>
-        <RouterProvider router={router} />
-        <MainLoader />
+        <div style={{background: '#F5F5F5', minHeight: '100vh'}}>
+          <Router />
+          <MainLoader />
+        </div>
       </PersistGate>
     </Provider>
   )

@@ -14,7 +14,7 @@ export interface CardProps extends ComponentPropsWithoutRef<"div"> {
 export const Card = (props: CardProps) => {
     const {isSticky, borderError, className, children, dashed, info, smallPadding, ...rest } = props;
 
-    let classes =  twMerge(
+    const classes =  twMerge(
       'tm-card border-[1px]',
         className,
         clsx({
@@ -44,7 +44,7 @@ export const StickyCard = (props: {sticky: 'top' | 'bottom', y?: number} & CardP
     const ref = useRef<HTMLDivElement>(null);
     const {isSticky} = useSticky(ref);
 
-    let classes = useMemo( () => twMerge(
+    const classes = useMemo( () => twMerge(
       'tm-card-sticky',
         className,
         clsx({

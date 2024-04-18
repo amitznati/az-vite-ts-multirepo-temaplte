@@ -4,12 +4,12 @@
   "description": "digital style library",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss build -i src/styles.scss -o dist/styles.css"
+    "build": "rimraf dist && node-sass -i src/styles.scss -o dist",
+    "watch": "npm run build && node-sass src/styles.scss -wo dist"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^9.0.0",
-    "tailwindcss": "^3.4.3"
+    "node-sass": "^9.0.0"
   }
 }
