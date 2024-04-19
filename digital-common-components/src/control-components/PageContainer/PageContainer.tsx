@@ -11,8 +11,8 @@ export default function PageContainer(props: IPageContainerProps) {
   const {className, ...rest } = props;
   return (
     <MUIThemeProvider>
-      <Box sx={{p: '24px'}}>
-        <Paper sx={{borderRadius: '12px', p: 2}}>
+      <Box sx={{height: '100%', p: '24px', backgroundColor: '#F5F5F5', display: 'flex', flexDirection: 'column', justifyContent: 'stretch'}}>
+        <Paper sx={{borderRadius: '12px', p: 2, flex: 1}}>
           <div className={clsx("page-container", className)} {...rest} />
         </Paper>
       </Box>

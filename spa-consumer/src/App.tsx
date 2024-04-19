@@ -13,10 +13,8 @@ function App() {
   return (
     <Provider store={store}>
       <PersistGate persistor={persistor}>
-        <div style={{background: '#F5F5F5', minHeight: '100vh'}}>
-          <Router />
-          <MainLoader />
-        </div>
+        <Router />
+        <MainLoader />
       </PersistGate>
     </Provider>
   )

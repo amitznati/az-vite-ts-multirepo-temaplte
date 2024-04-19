@@ -13,3 +13,11 @@ export type CardProps = ICardProps;
 export {default as MUIThemeProvider} from './MUIThemeProvider';
 export {default as PageContainer} from './PageContainer/PageContainer.tsx';
 export {Title} from './Typography';
+
+export {default as Dropdown} from './Dropdown/Dropdown.tsx';
+import {DropdownProps as TDropdownProps} from "./Dropdown/Dropdown.tsx";
+export type DropdownProps = TDropdownProps;
+
+export {default as TextInput} from './TextInput/TextInput.tsx';
+import {TextInputProps as TTextInputProps} from "./TextInput/TextInput.tsx";
+export type TextInputProps = TTextInputProps;

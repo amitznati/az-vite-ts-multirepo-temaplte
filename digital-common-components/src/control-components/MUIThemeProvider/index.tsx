@@ -18,7 +18,6 @@ export const theme = createTheme({
             light: '#E3BB2A'
         },
         divider: '#0000006B'
-
     },
 });
 
