@@ -1,8 +1,10 @@
 import {SelectAccountPropsType} from "../../SelectAccount.types";
-import {ControlComponents} from 'digital-common-components';
+import {ControlComponents, BusinessComponents} from 'digital-common-components';
 import {useState} from "react";
 
-const {Button, PageContainer, Dropdown, TextInput} = ControlComponents;
+const {Button, Dropdown, TextInput} = ControlComponents;
+const {PageContainer} = BusinessComponents;
+
 
 const typeOptions = [
   {value: 'BAN', label: 'BAN'},
@@ -32,10 +34,10 @@ export default function SelectAccountMainView(props: SelectAccountPropsType) {
               options={typeOptions}
               value={selectedType}
               onChange={setSelectedType}
-              width="198px"
+              boxProps={{className: 'select-account-form-inputs-dropdown'}}
             />
-            <TextInput sx={{width: '375px'}} label={`Search ${typeCodeToText[selectedType]}`} />
-            <Button variant="contained" color="primary">Find</Button>
+            <TextInput className="select-account-form-inputs-text" label={`Search ${typeCodeToText[selectedType]}`} />
+            <Button sx={{minWidth: '110px'}} variant="contained" color="primary">Find</Button>
           </div>
         </div>
       </div>

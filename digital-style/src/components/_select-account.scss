@@ -1,15 +1,35 @@
 .select-account-page {
     .select-account {
       padding: 64px;
+      @media (max-width: 900px) {
+        padding: 0;
+      }
       margin: auto;
       width: fit-content;
       &-form {
         display: flex;
         flex-direction: column;
         gap: 24px;
+
         &-inputs {
           display: flex;
           gap: 24px;
+            flex-direction: row;
+          &-dropdown {
+            width: 198px;
+          }
+          &-text {
+            width: 375px;
+          }
+          @media (max-width: 900px) {
+            flex-direction: column;
+            &-dropdown {
+              width: 100%;
+            }
+            &-text {
+              width: 100%;
+            }
+          }
         }
       }
     }
