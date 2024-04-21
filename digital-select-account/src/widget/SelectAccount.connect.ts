@@ -1,6 +1,7 @@
 import { connect } from "react-redux";
-import { getInstance } from "digital-sdk";
 import SelectAccountComponent from "./SelectAccount.component";
+
+const getInstance = window.amdocs['digital-sdk'].getInstance;
 
 const selectAccountApi = getInstance().SelectAccountApi;
 

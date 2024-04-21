@@ -10,9 +10,12 @@ import {
   REHYDRATE,
   persistStore
 } from 'redux-persist';
-import storage from 'redux-persist/lib/storage';
+// import storage from 'redux-persist/lib/storage';
 import { ApisType, WidgetType } from './types';
 import widgets from './widgets-apis';
+import sessionStorage from "redux-persist/es/storage/session";
+
+const storage = sessionStorage;
 
 const reducerMap: any = {};
 const persistSlices: string[] = [];

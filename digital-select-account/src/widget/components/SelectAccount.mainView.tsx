@@ -1,9 +1,7 @@
 import {SelectAccountPropsType} from "../../SelectAccount.types";
-import {ControlComponents, BusinessComponents} from 'digital-common-components';
 import {useState} from "react";
-
-const {Button, Dropdown, TextInput} = ControlComponents;
-const {PageContainer} = BusinessComponents;
+import {Button, Dropdown, TextInput} from '../../../../digital-common-components/src/control-components';
+import {PageContainer} from '../../../../digital-common-components/src/business-components';
 
 
 const typeOptions = [

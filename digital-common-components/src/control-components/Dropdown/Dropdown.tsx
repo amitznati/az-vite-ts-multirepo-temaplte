@@ -5,12 +5,13 @@ import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import {createTheme, Theme} from "@mui/material/styles";
 import {SxProps, ThemeProvider} from "@mui/material";
+import {ReactNode} from "react";
 
 export interface DropdownProps {
   label?: string;
   value: string;
   onChange: (value: string) => void;
-  options: Array<{ value: string; label: string }>;
+  options: Array<{ value: string; label: ReactNode }>;
   sx?: SxProps<Theme>;
   boxProps?: BoxProps;
 }

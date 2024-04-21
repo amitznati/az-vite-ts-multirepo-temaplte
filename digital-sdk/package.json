@@ -7,7 +7,7 @@
   "module": "dist/digital-sdk.js",
   "types": "dist/digital-sdk.d.ts",
   "scripts": {
-    "build": "tsc && vite build",
+    "build": "tsc && vite build --mode production",
     "watch": "tsc && vite build --watch",
     "prettier": "prettier --write ."
   },

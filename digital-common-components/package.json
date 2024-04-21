@@ -7,7 +7,7 @@
   "module": "dist/digital-common-components.js",
   "types": "dist/digital-common-components.d.ts",
   "scripts": {
-    "build": "tsc && vite build",
+    "build": "tsc && vite build --mode production",
     "watch": "tsc && vite build --watch",
     "prettier": "prettier --write ."
   },
