@@ -1,7 +1,7 @@
 import type { StorybookConfig } from "@storybook/react-vite";
 
 const config: StorybookConfig = {
-  stories: ["../src/**/*..mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
+  stories: ["../packages/select-account/src/**/*.stories.@(js|jsx|ts|tsx)"],
   addons: [
     {
       name: "@storybook/preset-scss",
@@ -14,14 +14,6 @@ const config: StorybookConfig = {
             localIdentName: "[name]__[local]___[hash:base64:5]",
             exportGlobals: true,
           },
-        },
-      },
-    },
-    {
-      name: "@storybook/addon-styling",
-      options: {
-        postCss: {
-          implementation: require("postcss"),
         },
       },
     },

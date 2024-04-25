@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "start": "lerna run --scope spa-consumer dev --stream",
+    "storybook": "lerna run --scope spa-consumer storybook --stream",
     "start:common-components": "lerna run --scope common-components storybook --stream",
     "build:common-components": "lerna run --scope common-components build --stream",
     "build:sdk": "lerna run --scope sdk build --stream",

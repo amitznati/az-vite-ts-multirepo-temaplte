@@ -26,9 +26,3 @@ const preview: Preview = {
 };
 
 export default preview;
-
-// import {withMuiTheme} from './with-mui-theme.tsx'
-//
-// export const decorators = [
-//   withMuiTheme
-// ]

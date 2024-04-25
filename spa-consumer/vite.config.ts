@@ -14,10 +14,12 @@ export default defineConfig({
       output: {
         manualChunks: (id: string) => {
           if (id.includes('node_modules')) {
-            return 'vendor';
+            return 'vendors';
           }
-        }
-      }
+        },
+        chunkFileNames: () => 'assets/[name].js',
+        assetFileNames: () => 'assets/[name][extname]',
+      },
     }
   }
 })

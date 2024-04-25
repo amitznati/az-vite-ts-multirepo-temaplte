@@ -1,13 +1,14 @@
-import {BusinessComponents} from 'common-components';
+import {BusinessComponents} from 'common-components/src';
+import 'spa-consumer/src/styles/styles.scss';
 
-const {PageContainer} = BusinessComponents;
+const {MUIThemeProvider} = BusinessComponents;
 
 /* snipped for brevity */
 
 export const withMuiTheme = (Story: any) => (
-  <PageContainer>
+  <MUIThemeProvider>
       <Story />
-  </PageContainer>
+  </MUIThemeProvider>
 );
 
 export const decorators = [withMuiTheme];
