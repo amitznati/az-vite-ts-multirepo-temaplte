@@ -9,12 +9,5 @@
   "scripts": {
     "build": "vite build && tsc",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
-  },
-  "peerDependencies": {
-    "@reduxjs/toolkit": "^2.2.3",
-    "axios": "^1.6.8",
-    "react": "^18.2.0",
-    "redux": "^5.0.1",
-    "redux-persist": "^6.0.0"
   }
 }
