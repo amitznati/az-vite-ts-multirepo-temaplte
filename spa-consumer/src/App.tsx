@@ -1,4 +1,4 @@
-import {getStoreInstance} from 'digital-sdk';
+import {getStoreInstance} from 'sdk/src';
 import { Provider } from 'react-redux';
 import { PersistGate } from "redux-persist/integration/react";
 import MainLoader from "./MainLoader";

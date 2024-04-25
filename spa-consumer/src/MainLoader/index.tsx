@@ -1,7 +1,6 @@
 import { connect } from "react-redux";
-import { ControlComponents } from "digital-common-components";
+import { Loading } from "common-components/src/control-components";
 
-const {Loading} = ControlComponents;
 export function SpinnerWidget({ spinnerOn }: { spinnerOn: boolean }) {
   if (!spinnerOn) {
     return <div />;

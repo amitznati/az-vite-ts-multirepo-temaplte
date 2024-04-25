@@ -1,0 +1,19 @@
+html {
+  min-height: 100vh;
+  height: 100%;
+}
+body,#root {height: 100%;}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.MuiOutlinedInput-root {
+  //legend {
+  //  span {
+  //    padding: 0 !important;
+  //    font-size: 14px !important;
+  //  }
+  //}
+}

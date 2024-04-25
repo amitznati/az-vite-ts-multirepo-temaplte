@@ -1,8 +1,9 @@
 import {createBrowserRouter, Link, RouterProvider} from "react-router-dom";
-import SelectAccount from 'digital-select-account';
-import {BusinessComponents} from 'digital-common-components';
+import SelectAccount from 'select-account/src';
+import {BusinessComponents} from 'common-components/src';
 
 const {PageContainer} = BusinessComponents;
+
 
 export default function Router () {
   const router = createBrowserRouter([
